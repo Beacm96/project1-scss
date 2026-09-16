@@ -1,0 +1,57 @@
+@use '../abstracts/variables' as *;
+
+.hero_aside2 {
+  li:first-child a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 142px;
+    height: 48px;
+
+    background-color: $dark_blue;
+    color: $white;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition:
+      transform 0.2s ease,
+      opacity 0.2s ease;
+
+    &:hover {
+      transform: translateY(-3px);
+      opacity: 0.88;
+    }
+  }
+
+  li:last-child a {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    color: $dark_blue;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: opacity 0.2s ease;
+
+    img {
+      width: 42px;
+      height: 42px;
+
+      transition: transform 0.2s ease;
+    }
+
+    &:hover {
+      opacity: 0.7;
+
+      img {
+        transform: scale(1.08);
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+@use '../abstracts/variables' as *;
+
+.reviews_clientes {
+  position: absolute;
+  inset: 0;
+
+  z-index: 10;
+
+  pointer-events: none;
+
+  .container {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+  }
+}
+
+.reviews_clientes1,
+.reviews_clientes2 {
+  position: absolute;
+
+  padding: 18px 20px;
+
+  border-radius: 14px;
+
+  img {
+    width: 27px;
+    margin-bottom: 6px;
+  }
+
+  p {
+    color: #161616;
+
+    font-size: 14px;
+    line-height: 1.45;
+  }
+
+  strong {
+    color: $dark_blue;
+    font-weight: 700;
+  }
+}
+
+.reviews_clientes1 {
+  width: 315px;
+
+  right: 52px;
+  top: 395px;
+
+  background: rgba(236, 249, 246, 0.88);
+}
+
+.reviews_clientes2 {
+  width: 320px;
+
+  right: 165px;
+  top: 640px;
+
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(8px);
+}

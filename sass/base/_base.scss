@@ -1,0 +1,13 @@
+@use 'animations';
+@use 'reset';
+@use 'typography';
+
+
+@use '../abstracts/variables' as *;
+
+body {
+  min-height: 100vh;
+  background: $cream;
+  overflow-x: hidden;
+  position: relative;
+}

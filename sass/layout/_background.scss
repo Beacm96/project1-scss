@@ -1,0 +1,32 @@
+@use '../abstracts/variables' as *;
+
+.image-left,
+.image-right {
+  position: absolute;
+  top: 0;
+  height: 700px;
+  
+}
+
+.image-left {
+  left: 0;
+  width: 67%;
+  background-color: $cream;
+  z-index: -3;
+}
+
+.image-right {
+  right: 0;
+  width: 33%;
+  background-color: $mint;
+  z-index: -3;
+}
+
+.vector {
+  position: absolute;
+  top: 155px;
+  right: 145px;
+  width: 360px;
+  opacity: 0.12;
+  z-index: 1;
+}

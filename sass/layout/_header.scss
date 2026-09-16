@@ -1,0 +1,21 @@
+.header_principal {
+  height: 150px;
+  position: relative;
+  z-index: 20;
+
+  .flex-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  > .container > a {
+    display: block;
+    flex-shrink: 0;
+
+    img {
+      width: 165px;
+      height: auto;
+    }
+  }
+}
